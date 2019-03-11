@@ -6,7 +6,7 @@ body {
 
 header {
     width: 100vw;
-    height: 80px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,11 +46,20 @@ header {
 
 .main {
     position: relative;
-    top: 80px;
+    top: 100px;
     background-color: aqua;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container {
-
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    width: 160px;
+    text-align: center;
 }
