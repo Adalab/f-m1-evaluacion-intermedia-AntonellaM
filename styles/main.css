@@ -47,7 +47,7 @@ body {
 .main {
     position: relative;
     top: 100px;
-    background-color: aqua;
+    background-color: #3CDBC0;
     height: 100vh;
     display: flex;
     justify-content: center;
