@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    background-color: #3CDBC0;
 }
 
 .header {
@@ -10,9 +14,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 10px;
 }
 
 .logo {
@@ -26,13 +30,15 @@ body {
     width: 155px;
 }
 
-.menu {
-    width: 100%;
+.menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 
-.menu-item {
+.menu__item {
     margin: 10px 10px 13px 10px;
     min-width: 50px;
     text-align: center;
@@ -47,7 +53,6 @@ body {
 .main {
     position: relative;
     top: 100px;
-    background-color: #3CDBC0;
     height: 100vh;
     display: flex;
     justify-content: center;
