@@ -10,13 +10,10 @@ body {
 
 .header {
     width: 100vw;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
     text-align: center;
     background-color: #fff;
     padding-top: 10px;
+    position: fixed;
 }
 
 .logo {
@@ -38,7 +35,11 @@ body {
     justify-content: center;
 }
 
-.menu__item {
+.menu__list-item {
+    margin: 10px 10px 13px 10px;
+}
+
+.menu__link {
     margin: 10px 10px 13px 10px;
     min-width: 50px;
     text-align: center;
@@ -73,7 +74,6 @@ body {
 
     .header {
         flex-direction: row;
-        height: 90px;
     }
     
     .logo {
@@ -86,10 +86,6 @@ body {
         justify-content: flex-end;
         align-items: center;
         margin-right: 30px;
-    }
-
-    .main {
-        top: 90px;
     }
 
     .text-container {
