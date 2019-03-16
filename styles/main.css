@@ -3,18 +3,21 @@
 }
 
 body {
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     background-color: #3CDBC0;
     font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     color: white;
-    max-height: 100%;
-    overflow: hidden;
 }
 
 h1 {
     margin: 0;
     padding: 0;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 
@@ -22,6 +25,7 @@ h1 {
     width: 100vw;
     text-align: center;
     background-color: #fff;
+    position: fixed;
 }
 
 .logo {
@@ -47,10 +51,7 @@ h1 {
 }
 
 .menu__link {
-    margin: 10px 10px 13px 10px;
     min-width: 50px;
-    font-size: 16px;
-    font-weight: 400;
     text-align: center;
     color: #4a4a4a;
     text-transform: uppercase;
@@ -58,12 +59,14 @@ h1 {
 }
 
 .main {
-
+    height: 100%-117px;
+    position: relative;
+    top: 117px;
+    display: flex;
+    justify-content: center;
 }
 
 .text-container {
-    font-size: 30px;
-    font-weight: 700;
     text-transform: capitalize;
     width: 160px;
     text-align: center;
@@ -84,7 +87,6 @@ h1 {
     .menu {
         justify-content: flex-end;
         align-items: center;
-        margin-right: 30px;
     }
 
     .text-container {
