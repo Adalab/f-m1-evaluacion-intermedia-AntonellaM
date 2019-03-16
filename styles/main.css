@@ -17,9 +17,9 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
+    text-transform: capitalize;
 }
-
 
 .header {
     width: 100vw;
@@ -28,14 +28,9 @@ h1 {
     position: fixed;
 }
 
-.logo {
-    width: 100%;
-}
-
 .logo--image {
     width: 155px;
     margin-top: 10px;
-
 }
 
 .menu__list {
@@ -66,31 +61,39 @@ h1 {
     justify-content: center;
 }
 
-.text-container {
-    text-transform: capitalize;
-    width: 160px;
+.text__container {
+    width: 250px;
     text-align: center;
+    transform: translatey(25vh)
 }
 
 @media all and (min-width: 768px) {
 
+    h1 {
+        font-size: 48px;
+    }
+
     .header {
+        display: flex;
         flex-direction: row;
     }
     
-    .logo {
+    .logo--link {
+        flex-basis: 50%;
+        display: flex;
         justify-content: flex-start;
-        align-items: center;
-        margin-left: 30px;
+        padding: 20px 0 20px 30px;
+    }
+
+    .logo--image {
+        margin-top: 0;
     }
 
     .menu {
+        flex-basis: 50%;
+        display: flex;
         justify-content: flex-end;
         align-items: center;
-    }
-
-    .text-container {
-        font-size: 48px;
-        width: 250px;
+        padding-right: 30px;
     }
 }
